@@ -1,0 +1,299 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+section {
+  width: 100%;
+  padding: 3rem 2rem;
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: #222;
+  color: white;
+  padding: 1rem 2rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-link {
+  color: white;
+  font-weight: 500;
+  padding: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #00aced;
+  border-bottom: 2px solid #00aced;
+}
+
+.slider {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  display: block;
+}
+
+.about {
+  background-color: #f0f0f5;
+}
+
+.about p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.team {
+  background-color: white;
+}
+
+.team-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.team-card {
+  flex: 1 1 30%;
+  min-width: 250px;
+  max-width: 32%;
+  padding: 1rem;
+  background-color: #fafafa;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+}
+
+.team-card img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.team-card h4 {
+  font-size: 1.2rem;
+  margin: 0.5rem 0 0.2rem;
+}
+
+.team-card p {
+  color: #777;
+  margin: 0;
+}
+
+.contact {
+  background-color: #f9f9f9;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.contact-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.contact-form button {
+  background-color: #333;
+  color: white;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #555;
+}
+
+.response-message {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 2rem 1rem;
+}
+
+.footer .social-icons {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.footer a {
+  color: white;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #00aced;
+}
+
+.functional-page {
+  background-color: #f6f9ff;
+}
+
+.functional-page h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.functional-page p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.news-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.news-card {
+  flex: 1 1 300px;
+  max-width: 31%;
+  background: white;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.news-card:hover {
+  transform: translateY(-5px);
+}
+
+.news-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.news-card h3 {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.news-card p {
+  font-size: 0.95rem;
+  color: #555;
+  flex-grow: 1;
+}
+
+.news-card a {
+  color: #0077cc;
+  text-decoration: underline;
+  font-size: 0.9rem;
+}
+
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+  }
+
+  .team-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team-card {
+    max-width: 90%;
+  }
+
+  .about p,
+  .contact h2,
+  .functional-page h2,
+  .functional-page p {
+    text-align: center;
+  }
+
+  .footer .social-icons {
+    justify-content: center;
+  }
+
+  .slider img {
+    max-height: 250px;
+  }
+
+  .news-grid {
+    flex-direction: column;
+  }
+
+  .news-card {
+    max-width: 100%;
+  }
+}
